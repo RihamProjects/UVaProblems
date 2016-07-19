@@ -18,8 +18,8 @@ int main() {
 #endif // ONLINE_JUDGE
     while(scanf("%d%d", &n, &m) == 2 && !(!n && !m)){
         for(int i=1;i<=n;i++)for(int j=1;j<=n;j++) {
-                if(i == j) cost[i][i]=0;
                 cost[i][j] = oo;
+                if(i == j) cost[i][i]=0;
         }
         char s[21][11];
         for(int i=0;i<n;scanf("%s", s+i++));
